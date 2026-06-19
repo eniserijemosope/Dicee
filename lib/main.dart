@@ -27,9 +27,16 @@ class DiceeApp extends StatelessWidget {
             ),
           ),
         ),
-        body: (
-      
-       ) 
+        body: const Center(
+          child: Text(
+            'Dicee App',
+            style: TextStyle(
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+            ),
+          ),
+        ),
       ),
     );
   }
