@@ -1,17 +1,29 @@
-# dicee
+# 🎲 Dicee App
 
-A new Flutter project.
+A simple Flutter application that simulates rolling two dice.
+
+## Features
+
+- Roll two dice by pressing a button or tapping the dice.
+- Random dice values generated on each roll.
+- Clean and simple user interface.
+- Built with Flutter.
+
+## Screenshots
+
+(Add screenshots here)
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter SDK installed
+- Android Studio or VS Code
+- Android Emulator or physical device
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+### Installation
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/dicee.git
