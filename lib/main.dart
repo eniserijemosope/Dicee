@@ -15,23 +15,19 @@ void main() {
     ); 
 }
 
-class DicePage extends StatefulWidget {
-  @override
-  _DicePageState createState() => _DicePageState();
-}
-
-class _DicePageState extends State<DicePage> {
+class DicePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Expanded(
-          child: Image.asset('images/dice1.png')
-          ),
+          child: Image.asset('images/dice1.png'),
+        ),
         Expanded(
-          child: Image.asset('images/dice1.png')
-          ),
-      ]
+          child: Image.asset('images/dice1.png'),
+        ),
+      ],
     );
   }
 }
