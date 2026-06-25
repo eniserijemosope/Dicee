@@ -12,11 +12,29 @@ class GradientContainer extends StatelessWidget {
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
               colors: [
-                Colors.blue,
+                Colors.red,
                 Colors.purple,
               ],
             ),
           ),
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.asset(
+                  'images/dice1.png',
+                  width: 200,
+                  ),
+                TextButton(
+                  style: TextButton.styleFrom(
+                    foregroundColor: Colors.white,
+                  ),
+                  onPressed: () {},
+                  child: const Text('Roll'),
+                ),
+              ],
+            )
+            ),
         );
   }
 }
