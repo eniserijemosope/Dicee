@@ -10,32 +10,35 @@ class Roller extends StatefulWidget {
 
 class _RollerState extends State<Roller> {
   var currentRoll = 1;
+  double turns = 0;
 
-  void rollDice(){
+  void rollDice() {
     setState(() {
+      turns += 3; // Spin 3 times
       currentRoll = Random().nextInt(6) + 1;
-         });
+    });
   }
+
   @override
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Image.asset(
-          'images/dice$currentRoll.png', 
-          width: 200
+        AnimatedRotation(
+          turns: turns,
+          duration: const Duration(milliseconds: 600),
+          child: Image.asset(
+            'images/dice$currentRoll.png',
+            width: 200,
           ),
+        ),
         const SizedBox(height: 30),
         TextButton(
           style: TextButton.styleFrom(
-            textStyle: const TextStyle(
-              fontSize: 28
-              ),
+            textStyle: const TextStyle(fontSize: 28),
             foregroundColor: Colors.white,
           ),
-          onPressed: () {
-            rollDice();
-          },
+          onPressed: rollDice,
           child: const Text('Roll Dice'),
         ),
       ],
