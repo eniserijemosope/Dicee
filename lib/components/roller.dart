@@ -14,7 +14,7 @@ class _RollerState extends State<Roller> {
 
   void rollDice() {
     setState(() {
-      turns += 3; // Spin 3 times
+      turns += 10; 
       currentRoll = Random().nextInt(6) + 1;
     });
   }
@@ -26,7 +26,7 @@ class _RollerState extends State<Roller> {
       children: [
         AnimatedRotation(
           turns: turns,
-          duration: const Duration(milliseconds: 600),
+          duration: const Duration(milliseconds: 1000),
           child: Image.asset(
             'images/dice$currentRoll.png',
             width: 200,
